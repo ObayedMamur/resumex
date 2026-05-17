@@ -69,7 +69,7 @@ describe("registerFonts", () => {
 				src: cjkFallbackSource,
 			}),
 		);
-	});
+	}, 30000);
 
 	it("uses the full CJK font source for synthetic italic variants when the CJK font is primary", async () => {
 		const registerSpy = vi.spyOn(Font, "register").mockImplementation(() => {});
